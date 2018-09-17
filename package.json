@@ -1,0 +1,14 @@
+{
+  "name": "fullstack",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Rahman Fadhil <rhmnfadhil@gmail.com> (http://rahmanfadhil.com)",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "devDependencies": {
+    "lerna": "^3.1.4"
+  }
+}

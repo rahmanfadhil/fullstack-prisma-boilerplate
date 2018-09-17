@@ -1,0 +1,31 @@
+{
+  "name": "@fullstack/backend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Rahman Fadhil <rhmnfadhil@gmail.com> (http://rahmanfadhil.com)",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "start": "node dist/index.js",
+    "deploy": "prisma deploy",
+    "dev:server": "nodemon -w src -e ts,graphql -x ts-node -r dotenv/config src/index.ts",
+    "dev": "npm-run-all --parallel dev:server playground",
+    "playground": "graphql playground --port 5000",
+    "build": "rimraf dist && tsc"
+  },
+  "dependencies": {
+    "graphql-tag": "^2.9.2",
+    "graphql-yoga": "^1.16.2",
+    "prisma-binding": "^2.1.5"
+  },
+  "devDependencies": {
+    "dotenv": "^6.0.0",
+    "graphql-cli": "^2.16.7",
+    "nodemon": "^1.18.4",
+    "npm-run-all": "^4.1.3",
+    "prisma": "^1.16.2",
+    "rimraf": "^2.6.2",
+    "ts-node": "^7.0.1",
+    "typescript": "^3.0.3"
+  }
+}
