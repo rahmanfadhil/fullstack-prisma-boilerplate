@@ -5,6 +5,7 @@
     "module": "commonjs",
     "rootDir": "src",
     "outDir": "dist",
-    "lib": ["esnext", "dom"]
+    "lib": ["esnext", "dom"],
+    "allowSyntheticDefaultImports": true
   }
 }
