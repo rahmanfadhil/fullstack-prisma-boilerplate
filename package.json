@@ -5,10 +5,16 @@
   "author": "Rahman Fadhil <rhmnfadhil@gmail.com> (http://rahmanfadhil.com)",
   "license": "MIT",
   "private": true,
+  "scripts": {
+    "precommit": "pretty-quick --staged"
+  },
   "workspaces": [
     "packages/*"
   ],
   "devDependencies": {
-    "lerna": "^3.1.4"
+    "husky": "^0.14.3",
+    "lerna": "^3.1.4",
+    "prettier": "^1.14.2",
+    "pretty-quick": "^1.6.0"
   }
 }
